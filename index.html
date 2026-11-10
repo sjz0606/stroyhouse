@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Stroy House — ремонт квартир и домов под ключ, Ташкент</title>
+<meta name="description" content="Stroy House: ремонт квартир и домов под ключ в Ташкенте, дизайн интерьера и экстерьера, регулярный технадзор, гарантия по договору.">
+<meta name="theme-color" content="#2f2e2b">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f2e2b'/%3E%3Cpath d='M6 17 16 8l10 9' fill='none' stroke='%23e8e5e0' stroke-width='2'/%3E%3Crect x='8' y='22' width='16' height='2' fill='%23f2d49b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600&family=Tenor+Sans&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="media/hl/h13_00.jpg">
+</head>
+<body>
+<a class="skip" href="#walk" data-i18n="skip">К объектам</a>
+
+<header class="top" id="top">
+  <a class="brand" href="#walk" aria-label="Stroy House">
+    <span class="brand-roof" aria-hidden="true"></span>
+    <span class="brand-name">STROY HOUSE</span>
+    <span class="brand-sub">renovation &amp; design group</span>
+  </a>
+  <nav class="nav" aria-label="Menu">
+    <a href="#objects" data-i18n="nav_objects">Объекты</a>
+    <a href="#process" data-i18n="nav_process">Как работаем</a>
+    <a href="#calc" data-i18n="nav_calc">Расчёт</a>
+  </nav>
+  <div class="top-r">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="uz" aria-pressed="false">UZ</button>
+    </div>
+    <a class="top-call" href="tel:+998901179707" aria-label="+998 90 117 97 07">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+      <span>+998 90 117 97 07</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<!-- Walkthrough: hero + scroll-driven 3D pass through a real object -->
+<section class="walk" id="walk" aria-label="Объекты Stroy House">
+  <div class="stage">
+    <canvas class="gl" aria-hidden="true"></canvas>
+    <div class="strip" aria-label="Фото объекта"></div>
+
+    <div class="hero">
+      <h1 data-i18n="h1">Ремонт квартир и&nbsp;домов под&nbsp;ключ</h1>
+      <p class="hero-lead" data-i18n="lead">Комплектация «под ключ», дизайн интерьера и экстерьера, регулярный технадзор. Гарантия — по договору.</p>
+      <div class="hero-cta">
+        <a class="btn btn-led" href="#calc" data-i18n="cta_calc">Рассчитать мой ремонт</a>
+        <a class="btn btn-ghost" href="tel:+998901179707" data-i18n="cta_call">Позвонить</a>
+      </div>
+      <p class="hero-note" data-i18n="free">Консультация по ремонту и дизайну — бесплатно</p>
+    </div>
+
+    <div class="obj-card" aria-live="polite">
+      <p class="obj-kicker" data-i18n="walk_k">Пройдите по объекту</p>
+      <h2 class="obj-name"></h2>
+      <p class="obj-meta"></p>
+      <div class="obj-progress"><span class="led-bar"></span></div>
+      <p class="obj-count"><span class="cur">01</span> / <span class="tot">10</span></p>
+      <button type="button" class="obj-next" data-i18n="next_obj">Следующий объект</button>
+    </div>
+
+    <div class="rail" role="tablist" aria-label="Объекты"></div>
+  </div>
+</section>
+
+<!-- Index of all objects -->
+<section class="objects" id="objects">
+  <div class="sec-head">
+    <h2 data-i18n="obj_h">Объекты из сторис</h2>
+    <p data-i18n="obj_p">Четырнадцать реальных объектов — квартиры и дома в Ташкенте и рядом. Нажмите на объект, чтобы пройти его в 3D.</p>
+  </div>
+  <ol class="obj-list"></ol>
+</section>
+
+<!-- How we work -->
+<section class="process" id="process">
+  <div class="sec-head">
+    <h2 data-i18n="pr_h">Как идёт ремонт</h2>
+    <p data-i18n="pr_p">Все заботы о ремонте берём на себя: от первой консультации до сдачи ключей. Кадры — с объектов Stroy House.</p>
+  </div>
+  <div class="steps">
+    <div class="tn-line" aria-hidden="true"><span></span></div>
+    <ol class="step-list">
+      <li class="step" data-media="v:DeJRSj4oN3w">
+        <h3 data-i18n="s1_h">Бесплатная консультация</h3>
+        <p data-i18n="s1_p">Позвоните или напишите в Telegram и Директ — расскажем, с чего начать, и рассчитаем стоимость ремонта или дизайн-проекта.</p>
+      </li>
+      <li class="step" data-media="i:hl/h03_13.jpg">
+        <h3 data-i18n="s2_h">Дизайн интерьера и экстерьера</h3>
+        <p data-i18n="s2_p">Проектирование и дизайн под ваш вкус: неоклассика, минимализм, хай-тек. Задача — подойти к интерьеру со вкусом и сдать его вам таким же в жизни.</p>
+      </li>
+      <li class="step" data-media="i:hl/h12_01.jpg">
+        <h3 data-i18n="s3_h">Подбор материалов и мебели</h3>
+        <p data-i18n="s3_p">Мебель, технику и все материалы подбирают наши специалисты вместе с вами — и берут на себя закупку.</p>
+      </li>
+      <li class="step" data-media="v:media/hl/h11_01.mp4|media/hl/h11_01.jpg">
+        <h3 data-i18n="s4_h">Демонтаж и черновые работы</h3>
+        <p data-i18n="s4_p">Демонтаж, монтаж сантехники, гипсокартон, тёплые полы — на объектах в новостройках и частных домах.</p>
+      </li>
+      <li class="step tn" data-media="v:DMpJvZTCicL">
+        <h3 data-i18n="s5_h">Отделка под регулярным технадзором</h3>
+        <p data-i18n="s5_p">Лепнина, декоративные покрытия, плитка, подсветка. Технадзор приезжает на объект регулярно — на каждом этапе.</p>
+      </li>
+      <li class="step tn" data-media="i:p/DMUkQ07CkBM.jpg">
+        <h3 data-i18n="s6_h">Мебель на заказ</h3>
+        <p data-i18n="s6_p">Кухни, шкафы, прихожие и стеновые панели изготавливаются под размеры вашего объекта.</p>
+      </li>
+      <li class="step tn" data-media="v:DbdcEgHhiEl">
+        <h3 data-i18n="s7_h">Сдача ключей и гарантия по договору</h3>
+        <p data-i18n="s7_p">Объект передаётся хозяевам готовым к жизни. Гарантия на работы закрепляется в договоре.</p>
+      </li>
+    </ol>
+    <div class="step-media" aria-hidden="true">
+      <div class="sm-frame"><img alt="" loading="lazy"><video muted playsinline loop preload="none"></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- Calculation request composer -->
+<section class="calc" id="calc">
+  <div class="sec-head">
+    <h2 data-i18n="c_h">Заявка на расчёт ремонта</h2>
+    <p data-i18n="c_p">Отметьте, что у вас за объект, — мы соберём из ответов сообщение. Отправьте его в Telegram или Директ, либо позвоните: стоимость рассчитаем бесплатно.</p>
+  </div>
+  <div class="calc-grid">
+    <form class="cf" autocomplete="off" onsubmit="return false">
+      <fieldset>
+        <legend data-i18n="f_type">Объект</legend>
+        <div class="seg" data-field="type">
+          <button type="button" data-v="flat" aria-pressed="true" data-i18n="t_flat">Квартира</button>
+          <button type="button" data-v="house" aria-pressed="false" data-i18n="t_house">Дом</button>
+          <button type="button" data-v="room" aria-pressed="false" data-i18n="t_room">Отдельное помещение</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="f_state">Состояние</legend>
+        <div class="seg" data-field="state">
+          <button type="button" data-v="box" aria-pressed="true" data-i18n="st_box">Новостройка, коробка</button>
+          <button type="button" data-v="rough" aria-pressed="false" data-i18n="st_rough">Новостройка, черновая</button>
+          <button type="button" data-v="old" aria-pressed="false" data-i18n="st_old">Вторичка</button>
+        </div>
+      </fieldset>
+      <fieldset class="area-f">
+        <legend data-i18n="f_area">Площадь</legend>
+        <div class="area">
+          <input type="range" id="area" min="10" max="600" step="1" value="80" aria-labelledby="area-l">
+          <label class="area-num" id="area-l"><input type="number" id="areaN" min="10" max="2000" value="80" inputmode="numeric"> <span>м²</span></label>
+        </div>
+        <div class="area-ruler" aria-hidden="true"><span>10</span><span>150</span><span>300</span><span>450</span><span>600+</span></div>
+      </fieldset>
+      <fieldset>
+        <legend><label for="district" data-i18n="f_dist">Район</label></legend>
+        <div class="sel"><select id="district"></select></div>
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="f_need">Что нужно</legend>
+        <div class="seg multi" data-field="need">
+          <button type="button" data-v="turnkey" aria-pressed="true" data-i18n="n_turnkey">Ремонт под ключ</button>
+          <button type="button" data-v="design" aria-pressed="false" data-i18n="n_design">Дизайн-проект</button>
+          <button type="button" data-v="supply" aria-pressed="false" data-i18n="n_supply">Комплектация материалами</button>
+          <button type="button" data-v="furn" aria-pressed="false" data-i18n="n_furn">Мебель на заказ</button>
+          <button type="button" data-v="ext" aria-pressed="false" data-i18n="n_ext">Экстерьер</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="f_style">Стиль</legend>
+        <div class="seg" data-field="style">
+          <button type="button" data-v="neo" aria-pressed="true" data-i18n="y_neo">Неоклассика</button>
+          <button type="button" data-v="min" aria-pressed="false" data-i18n="y_min">Минимализм</button>
+          <button type="button" data-v="hitech" aria-pressed="false" data-i18n="y_hitech">Хай-тек</button>
+          <button type="button" data-v="modern" aria-pressed="false" data-i18n="y_modern">Современный</button>
+          <button type="button" data-v="unsure" aria-pressed="false" data-i18n="y_unsure">Пока не решили</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="f_budget">Ориентир по бюджету</legend>
+        <div class="seg" data-field="budget">
+          <button type="button" data-v="b1" aria-pressed="false" data-i18n="b1">до $15 000</button>
+          <button type="button" data-v="b2" aria-pressed="false" data-i18n="b2">$15 000–30 000</button>
+          <button type="button" data-v="b3" aria-pressed="false" data-i18n="b3">$30 000–60 000</button>
+          <button type="button" data-v="b4" aria-pressed="false" data-i18n="b4">больше $60 000</button>
+          <button type="button" data-v="b0" aria-pressed="true" data-i18n="b0">Обсудим при расчёте</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="f_when">Когда начать</legend>
+        <div class="seg" data-field="when">
+          <button type="button" data-v="now" aria-pressed="true" data-i18n="w_now">Как можно скорее</button>
+          <button type="button" data-v="month" aria-pressed="false" data-i18n="w_month">В течение 1–2 месяцев</button>
+          <button type="button" data-v="later" aria-pressed="false" data-i18n="w_later">Позже, пока присматриваюсь</button>
+        </div>
+      </fieldset>
+      <fieldset class="two">
+        <label><span data-i18n="f_name">Имя</span><input type="text" id="name" maxlength="60"></label>
+        <label><span data-i18n="f_note">Комментарий</span><input type="text" id="note" maxlength="200" data-i18n-ph="note_ph" placeholder="Например: санузел и кухня, сдача дома в мае"></label>
+      </fieldset>
+    </form>
+
+    <aside class="ticket" aria-label="Сообщение">
+      <div class="ticket-paper">
+        <p class="ticket-h" data-i18n="ticket_h">Ваше сообщение</p>
+        <pre class="msg" id="msg"></pre>
+      </div>
+      <div class="send">
+        <a class="btn btn-led" href="tel:+998901179707" data-i18n="send_call">Позвонить +998 90 117 97 07</a>
+        <button type="button" class="btn btn-line" data-send="tg" data-i18n="send_tg">Отправить в Telegram</button>
+        <button type="button" class="btn btn-line" data-send="ig" data-i18n="send_ig">Отправить в Instagram Direct</button>
+        <button type="button" class="btn btn-ghost" data-send="copy" data-i18n="send_copy">Скопировать текст</button>
+      </div>
+      <p class="send-note" data-i18n="send_note">Перед открытием Telegram или Директа текст копируется — просто вставьте его в чат.</p>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot-main">
+    <div>
+      <p class="brand-name">STROY HOUSE</p>
+      <p class="foot-sub" data-i18n="foot_sub">Ремонт квартир и домов под ключ · Ташкент</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="tel:+998901179707">+998 90 117 97 07</a></li>
+      <li><a href="https://t.me/stroyhouse_uz" target="_blank" rel="noopener">Telegram · @stroyhouse_uz</a></li>
+      <li><a href="https://instagram.com/stroyhouse_uz" target="_blank" rel="noopener">Instagram · @stroyhouse_uz</a></li>
+    </ul>
+  </div>
+  <p class="concept" data-i18n="concept">Концепт сайта · Lumagen</p>
+</footer>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
